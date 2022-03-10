@@ -131,6 +131,7 @@ a {
     background-color: #fff;
     border-radius: 5px;
     padding: 5% 0;
+    z-index: 1;
   }
   .nav__item a {
     padding: 1rem 1rem;
@@ -203,7 +204,7 @@ a {
   background-size: cover;
 }
 
-@media (min-width: 1100px) {
+/* @media (min-width: 1100px) {
   .shape-1 {
     height: 814px;
     width: 814px;
@@ -224,15 +225,41 @@ a {
   .shape-1 {
     height: 714px;
     width: 714px;
-    top: -10%;
-    left: 20%;
+    top: -20%;
+    left: 10%;
   }
 }
-@media (min-width: 200px) and (max-width: 555px) {
+@media (min-width: 300px) and (max-width: 555px) {
   .shape-1 {
     height: 514px;
     width: 514px;
     top: -15%;
     left: 15%;
   }
+} */
+
+/*Features Section*/
+.btn-list {
+  padding: 5px 20px;
+  margin-right: 20px;
 }
+/* .feature-right{
+    margin-left: 5%;
+} */
+.feature-list {
+  padding: 0 15% 0 5%;
+}
+@media (max-width: 869px) {
+  .btn-list {
+    margin-right: 10px;
+  }
+  .features-heading {
+    background-color: var(--neutral-pale-red);
+    line-height: 1.5;
+  }
+  .feature-list {
+    padding: 0 1%;
+  }
+}
+
+/*Testimonials Section */
