@@ -84,9 +84,9 @@ a {
   text-decoration: none;
   color: var(--neutral-dark-blue);
 }
-.nav__item a:hover{
+.nav__item a:hover {
   text-decoration: none;
-  color:var(--neutral-dark-gray);
+  color: var(--neutral-dark-gray);
 }
 .nav__toggle {
   display: none;
@@ -277,6 +277,8 @@ a {
   top: 0;
   left: 0;
   transform: translate(-60%, 130%);
+  /* top:135%;
+  transform:translateX(-60%); */
 }
 .feature-list {
   padding: 0 15% 0 5%;
@@ -290,9 +292,11 @@ a {
     line-height: 1.5;
   }
   .tablet-2-svg {
-    /* transform: translate(70%, 120%); */
-    top: 5%;
-    left: 115%;
+    z-index: -1;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateX(65%);
   }
   .feature-list {
     padding: 0 1%;
@@ -367,7 +371,6 @@ footer a {
   text-decoration: none;
   color: var(--neutral-light-gray);
 }
-
 
 ul {
   list-style: none;
@@ -454,7 +457,7 @@ ul {
 .carousel-item.active > .card {
   margin: 10% 0.5% 10% 0.5%;
 }
-.test-btn:hover{
+.test-btn:hover {
   background: hsl(12, 88%, 68%);
   text-decoration: none;
 }
@@ -522,7 +525,6 @@ ul {
   margin-left:5%;
 } */
 .footer-links {
- 
   margin-top: 5px;
 }
 .primary-links {
@@ -532,11 +534,11 @@ ul {
   min-width: 150px;
   /* margin-left: 10%; */
 }
-.footer-links > a{
-  color:var(--neutral-light-gray);
+.footer-links > a {
+  color: var(--neutral-light-gray);
 }
-.footer-links > a:hover{
-  color:var(--primary-red);
+.footer-links > a:hover {
+  color: var(--primary-red);
   text-decoration: none;
 }
 
@@ -557,7 +559,7 @@ input[type="text"] {
 .error {
   color: var(--primary-red);
   font-size: 9px;
-  transform:translateX(10px);
+  transform: translateX(10px);
   height: 13px;
 }
 .btn-footer {
@@ -591,18 +593,17 @@ input[type="text"] {
   text-decoration: none;
 }
 
-
 @media (min-width: 768px) {
   .f-social-group {
     margin-top: 50px;
   }
   .copy-m {
-    font-size:14px;
+    font-size: 14px;
     display: none;
     color: var(--neutral-dark-gray);
   }
   .copy-d {
-    font-size:14px;
+    font-size: 14px;
     margin-top: 50px;
     color: var(--neutral-dark-gray);
   }
@@ -645,7 +646,7 @@ input[type="text"] {
   .forms {
     padding: 0;
   }
-  .input-control{
+  .input-control {
     margin-bottom: 50px;
   }
   /* input{
@@ -654,12 +655,12 @@ input[type="text"] {
   } */
 
   .copy-d {
-    font-size:14px;
+    font-size: 14px;
     display: none;
     color: var(--neutral-dark-gray);
   }
   .copy-m {
-    font-size:14px;
+    font-size: 14px;
     margin-top: 5%;
     color: var(--neutral-dark-gray);
     text-align: center;
