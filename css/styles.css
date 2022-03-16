@@ -308,7 +308,6 @@ a {
   background-image: url(images/bg-simplify-section-desktop.svg);
 }
 .tablet-3-m {
-  background-image: none;
   display: none !important;
   visibility:hidden;
 }
