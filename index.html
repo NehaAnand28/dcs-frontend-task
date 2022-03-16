@@ -46,7 +46,9 @@
         <div class="container">
             <div class="row flex-lg-row-reverse align-items-center  py-5">
                 <div class="col col-lg-7 ">
-                    <div class="shape-1"></div>
+                    <!-- <div class="shape-1"></div> -->
+                    <!-- <img src="images/bg-tablet-pattern.svg" class="d-block mx-auto img-fluid tablet-svg align-center"
+                        alt="Bootstrap Themes"> -->
                     <img src="images/illustration-intro.svg" class="d-block mx-auto img-fluid hero-img align-center"
                         alt="Bootstrap Themes">
                 </div>
@@ -72,6 +74,8 @@
                     <h1 class="hero-heading fw-bold lh-2 mb-4">What's different about Manage?</h1>
                     <p class="lead">Manage provides all the functionality your team needs, without the complexity.Our
                         software is tailor-made for modern digital product teams</p>
+                    <!-- <img src="images/bg-tablet-pattern.svg" class="d-block mx-auto img-fluid tablet-2-svg align-center"
+                        alt="Bootstrap Themes"> -->
                 </div>
                 <div class="col col-lg-7 feature-right">
                     <div class="d-flex flex-column justify-content-between feature-list">
@@ -110,11 +114,14 @@
             <div class="row mx-auto my-auto justify-content-center">
                 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
@@ -127,7 +134,8 @@
                                         <div class="card-title mt-4 d-flex flex-column align-items-center">
                                             <p class="person-name">Anisha Li</p>
                                             <p class="slider-subtitle">
-                                                Manage has supercharged our teams workflow.The ability to maintain visibility on
+                                                Manage has supercharged our teams workflow.The ability to maintain
+                                                visibility on
                                                 larger milestones at all times keeps everyone motivated.
                                             </p>
                                         </div>
@@ -146,13 +154,14 @@
                                         <div class="card-title mt-4 d-flex flex-column align-items-center">
                                             <p class="person-name">Ali Bravo</p>
                                             <p class="slider-subtitle">
-                                                Manage has supercharged our teams workflow.The ability to maintain visibility on
+                                                Manage has supercharged our teams workflow.The ability to maintain
+                                                visibility on
                                                 larger milestones at all times keeps everyone motivated.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                            
+
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -165,13 +174,14 @@
                                         <div class="card-title mt-4 d-flex flex-column align-items-center">
                                             <p class="person-name">Richard Watts</p>
                                             <p class="slider-subtitle">
-                                                Manage has supercharged our teams workflow.The ability to maintain visibility on
+                                                Manage has supercharged our teams workflow.The ability to maintain
+                                                visibility on
                                                 larger milestones at all times keeps everyone motivated.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                            
+
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -184,13 +194,14 @@
                                         <div class="card-title mt-4 d-flex flex-column align-items-center">
                                             <p class="person-name">Shanai Gough</p>
                                             <p class="slider-subtitle">
-                                                Manage has supercharged our teams workflow.The ability to maintain visibility on
+                                                Manage has supercharged our teams workflow.The ability to maintain
+                                                visibility on
                                                 larger milestones at all times keeps everyone motivated.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -210,8 +221,14 @@
 
     <!-- Simplify Section -->
     <section class="simplify">
-        <div class="container">
-            <div class="row d-flex flex-row  py-5">
+        <div class="container pd-t">
+            <img src="images/bg-simplify-section-desktop.svg" class="d-block mx-auto img-fluid tablet-3-d align-center"
+                alt="Bootstrap Themes">
+            <img src="images/bg-simplify-section-mobile.svg" class="d-block mx-auto img-fluid tablet-3-m align-center"
+                alt="mobile svg" />
+
+            <div class="row simpli-text d-flex flex-row  py-5">
+
                 <div class="col-lg-5 simplify-text d-flex justify-content-center">
                     <h1>Simplify how your team works today.</h1>
                 </div>
@@ -255,16 +272,21 @@
                     </div>
 
                 </div>
-               
+
                 <div class="f-hero-item forms">
-                    <form>
-                        <input type="email" name="email" placeholder="Updates in your inbox..">
-                        <button class="btn btn-footer">Go</button>
+                    <form id="form" action="/">
+                        <div class="input-control">
+                            <input style=" border-radius:20px;font-size: 12px;
+    padding: 13px 30px 13px 30px;" id="email" type="text" name="email" placeholder="Updates in your inbox.." required>
+                            <button type="submit" class="btn btn-footer"> Go </button>
+                            <br>
+                            <div style="color:var(--primary-red);font-size: 10px;" class="error"></div>
+                        </div>
                     </form>
                     <div class="f-hero-item copy-d">
                         <p>Copyrights 2020.All rights reserved.</p>
                     </div>
-                </div> 
+                </div>
                 <div class="f-hero-item copy-m">
                     <p>Copyrights 2020.All rights reserved.</p>
                 </div>
