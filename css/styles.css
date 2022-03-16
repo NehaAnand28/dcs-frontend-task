@@ -333,11 +333,13 @@ a {
 .tablet-3-d {
   position: absolute;
   z-index: 1;
+  transform: translateY(50%);
   background-image: url(images/bg-simplify-section-desktop.svg);
 }
 .tablet-3-m {
   background-image: none;
   display: none;
+  visibility:hidden;
 }
 @media (max-width: 869px) {
   .simplify-text {
@@ -347,10 +349,13 @@ a {
   .tablet-3-d {
     background-image: none;
     display: none;
+    visibility:hidden;
   }
   .tablet-3-m {
+    visibility: visible;
     position: absolute;
     z-index: 1;
+    transform:translateX(-10%);
     background-image: url(images/bg-simplify-section-mobile.svg);
   }
 }
